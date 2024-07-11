@@ -1,13 +1,17 @@
-#miklink v0.1 by ���ѓ��ȃN���j�b�N
-�R�j�J�~�m���^��REGIUS UNITEA�Ɠd�q�J���e��A�g������ہA�W���̘A�g�v���O�����ukimlink�v�̋N���ɑ�ώ��Ԃ������邽�߁A���@�\���Ď����������́B
+#miklink v0.1 by 糸貫内科クリニック
 
 
-���̃v���O�����͎��؎����ł���A�o�b�t�@�[�I�[�o�[�t���[�̑΍�͑S���s���Ă��Ȃ��B���p����ɂ͏C�����K�v�B
+コニカミノルタのREGIUS UNITEAと電子カルテを連携させる際、標準の連携プログラム「kimlink」の起動に大変時間がかかるため、同機能を再実装したもの。
 
-##�g�����F
-�d�q�J���e������UNITEA�̉�ʂ��J���ɂ́A
-miklink.exe UNITEA�T�[�o��IP UNITEA�T�[�o�̃|�[�g UNITEA�T�[�o�̃��[�U�� ���Ҕԍ� open
 
-###NTT�����{ FC21Warp�ł̐ݒ��F
-�u�ėp���[�J���A�v���v�u���s�v���O�����̈����v�ɁA XX.XX.XX.XX 80 KM-USR-00001 [@sinsatuken_no] open
+このプログラムは実証試験であり、バッファーオーバーフローの対策は全く行っていない。実用するには修正が必要。
+
+##使い方：
+電子カルテ等からUNITEAの画面を開くには、
+
+
+miklink.exe UNITEAサーバのIP UNITEAサーバのポート UNITEAサーバのユーザ名 患者番号 open
+
+###NTT東日本 FC21Warpでの設定例：
+「汎用ローカルアプリ」「実行プログラムの引数」に、 XX.XX.XX.XX 80 KM-USR-00001 [@sinsatuken_no] open
 
